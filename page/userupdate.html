@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/userupdate.css">
+    <title>Edit Profile</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Edit Profile</h2>
+        <form id="updateProfileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="nameInput" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="emailInput" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="passwordInput" name="password" placeholder="Enter password">
+
+            <button type="submit">Update Profile</button>
+            <button type="button" onclick="goBack()">Back</button>
+        </form>
+    </div>
+
+    <script src="../js/userupdate.js" defer></script>
+    <script>
+        function goBack() {
+            // Fungsi untuk kembali ke halaman sebelumnya
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

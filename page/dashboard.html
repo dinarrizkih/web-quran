@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Deen</title>
+
+  <!-- My Own CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/landingPage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="navbar-container">
+    <a href="index.html" class="logo">DEEN</a>
+    <nav class="nav-list">
+      <ul class="navlist">
+        <li><a href="./alquran.html">Al-Qur'an</a></li>
+        <li><a href="./jadwal.html">Jadwal Shalat</a></li>
+        <li><a href="./halaman.html">Quiz</a></li>
+      </ul>
+    </nav>
+    <!-- <div class="profile-dropdown">
+        <div onclick="toggle()" class="profile-dropdown-btn">
+          <div class="profile-img">
+            <i class="fa-solid fa-circle"></i>
+          </div>
+
+          <span
+            >Log out
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+        </div>
+
+        <ul class="profile-dropdown-list">
+          <li class="profile-dropdown-list-item">
+            <a href="./page/userupdate.html">
+              <i class="fa-regular fa-user"></i>
+              My Profile
+            </a>
+          </li>
+
+          <li class="profile-dropdown-list-item">
+            <a href="#">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              Log out
+            </a>
+          </li>
+        </ul>
+      </div> -->
+    <div class="profile-dropdown">
+      <div onclick="logout()" class="profile-dropdown-btn">
+        <span>Logout</span>
+      </div>
+    </div>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="content-description">
+        <h2 class="title">Temukan Kedamaian dengan Membaca Al-Qur'an</h2>
+        <p>
+          Rasulullah ﷺ bersabda: “Siapa saja membaca satu huruf dari
+          Kitabullah (Al-Quran), maka dia akan mendapat satu kebaikan.
+          Sedangkan satu kebaikan dilipatkan kepada sepuluh semisalnya. Aku
+          tidak mengatakan alif lam mim satu huruf. Akan tetapi, alif satu
+          huruf, lam satu huruf, dan mim satu huruf.”
+        </p>
+        <button onclick="window.location.href='./page/alquran.html'">
+          Mulai Membaca
+        </button>
+      </div>
+
+      <div class="content-image">
+        <img src="../img/quran.png" alt="Deen Image" />
+      </div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../landingPage.js"></script>
+  <script>
+    function logout() {
+
+      // Mengarahkan pengguna ke halaman login
+      window.location.href = './../index.html';
+    }
+  </script>
+</body>
+
+</html>

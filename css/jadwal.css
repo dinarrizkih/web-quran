@@ -1,0 +1,109 @@
+.hidden-list {
+    display: none;
+}
+
+body {
+    background: #f0faff;
+}
+
+.input-search {
+    background: #fafdfd;
+    /* Warna latar belakang input */
+    border: 2px solid  #1b4f72;
+    /* Mengatur border saat normal */
+    border-radius: 10px;
+    transition: background 0.3s;
+    /* Efek transisi hanya untuk latar belakang */
+}
+
+.input-search:hover,
+.input-search:focus {
+    border: 2px solid  #1b4f72;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(76, 153, 197, 0.5);
+    /* Atur bayangan sesuai kebutuhan Anda */
+    outline: none;
+    /* Untuk menghapus garis fokus bawaan (outline) yang mungkin muncul di beberapa browser */
+}
+
+/* Untuk mengatur card jadwal sholat */
+.card {
+    background: #fafdfd;
+    /* Warna latar belakang card */
+    border-radius: 0 0 15px 15px;
+    /* Sudut (radius) border bawah */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Untuk mengatur header card */
+.card-header {
+    background: #1b4f72;
+    /* Warna latar belakang header */
+    color: #fafdfd;
+    /* Warna teks header */
+    border-radius: 15px 15px 0 0;
+    /* Sudut (radius) border atas */
+}
+
+/* Untuk mengatur judul kota */
+.judul-kota {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1b4f72;
+    /* Warna teks judul kota */
+}
+
+/* Efek hover pada daftar jadwal sholat */
+.list-group-item:hover {
+    background:  linear-gradient(245.59deg, #c7dae6 0%, #e4e9f0 28.53% 75.52%);
+    /* Warna latar belakang saat dihover */
+    color: #000000;
+    /* Warna teks saat dihover */
+    transition: background 0.3s, color 0.3s;
+    /* Efek transisi untuk smooth hover */
+    border: 2px solid  #1b4f72;
+}
+
+/* Mengatur waktu solat */
+.list-group-item {
+    background: #ffffff;
+    /* Latar belakang putih */
+    border: 2px solid  #1b4f72;
+    /* Border hijau */
+    color: #000000;
+    /* Warna teks hitam */
+    border-radius: 10px;
+    /* Sudut border */
+    font-weight: 600;
+    /* Ketebalan teks */
+    margin-bottom: 10px;
+    /* Spasi antara item */
+}
+
+/* Untuk mengatur badge jadwal sholat */
+.badge {
+    background: #1b4f72;
+    /* Warna latar belakang badge */
+    color: #000000;
+    /* Warna teks badge */
+    border-radius: 10px;
+    /* Sudut (radius) border badge */
+    font-weight: 600;
+}
+
+/* Untuk mengatur footer card */
+.card-footer.text-muted {
+    background: #1b4f72;
+    /* Warna latar belakang footer */
+    color: #fafdfd;
+    /* Warna teks footer */
+    border-radius: 0 0 15px 15px;
+    /* Sudut (radius) border bawah */
+
+}
+
+.tanggal {
+    color: white !important;
+    /* Mengatur warna teks menjadi putih dengan !important */
+    text-align: center;
+}

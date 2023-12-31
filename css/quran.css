@@ -1,0 +1,77 @@
+.loader{
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+}
+body {
+    background: #f0faff;
+}
+
+.hidden-loader{
+    display: none;
+}
+
+.card-surat {
+    cursor: pointer;
+    transition: 0.8s;
+    border-radius: 18px;
+}
+.card{
+    border-radius: 18px;
+    border: 2px solid #1b4f72;
+    background-color: #f0faff;
+}
+.card:hover{
+    border-radius: 18px;
+    border: #1b4f72;
+}
+.card-text-arti-surat:hover {
+    border: none;
+}
+.card-body:hover,
+.card-body:focus {
+    border: 2px solid #1b4f72;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(76, 153, 197, 0.5); /* Atur bayangan sesuai kebutuhan Anda */
+    outline: none; /* Untuk menghapus garis fokus bawaan (outline) yang mungkin muncul di beberapa browser */
+}
+
+/* CSS untuk membuat elemen sejajar */
+.card-text-container {
+    display: flex; /* Menggunakan flexbox untuk mengatur tampilan */
+    justify-content: space-between; /* Membuat elemen sejajar dengan jarak di antara mereka */
+    align-items: center; /* Membuat elemen berada di tengah secara vertikal */
+    padding: 10px; /* Menambahkan ruang dalam kartu */
+}
+
+/* CSS untuk mengatur tampilan elemen "Ayat" */
+.card-text-ayat {
+    margin: 0; /* Menghapus margin bawaan */
+    letter-spacing: 1.5px;
+    background-color: #1b4f72; /* Latar belakang biru */
+    color: #e5eef3; /* Warna teks putih */
+    padding: 5px 10px; /* Padding di atas dan bawah 5px, padding kiri dan kanan 10px */
+    border-radius: 10px; /* Sudut (radius) border 10px */
+}
+
+/* CSS untuk mengatur tampilan elemen "Tempat Turun" */
+.card-text-tempat-turun {
+    margin: 0; /* Menghapus margin bawaan */
+    letter-spacing: 1.5px;
+    background: #f0faff;
+    color: #1b4f72; /* Warna teks putih */
+    padding: 5px 10px; /* Padding di atas dan bawah 5px, padding kiri dan kanan 10px */
+    border-radius: 10px; /* Sudut (radius) border 10px */
+    border: 1px solid #1b4f72;
+}
+
+.hidden-button{
+    display: none;
+}
+
+
